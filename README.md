@@ -9,4 +9,4 @@ Supreme Drop Bot requires Python 3.X, and the following libraries:
 3. BeautifulSoup4
 4. Requests
 
-__ChromeDriver must be in the System PATH.__
+__[ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) must be in the System PATH.__
