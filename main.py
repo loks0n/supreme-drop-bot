@@ -26,15 +26,11 @@ products = [["Leather Work","jackets","Silver","Medium"],]
 mainUrl = 'http://www.supremenewyork.com/shop/all/'
 baseUrl = 'http://supremenewyork.com'
 checkoutUrl = 'https://www.supremenewyork.com/checkout'
+browser = Browser('chrome')
 
 def main():
-        init()
         product_search()
         checkout()
-
-def init():
-        #Open chrome
-        browser = Browser('chrome')
 
 def product_search():
         #For each product in product list
@@ -47,7 +43,7 @@ def product_search():
                 for div in soup.find_all('div', 'turbolink_scroller'):
                         name_flag = False
                         for a in div.find_all('a', href=True, text=True):
-                                if product[0] in a.text
+                                if product[0] in a.text:
                                         name_flag = True
                                 if name_flag and product[2] in a.text:
                                         #If found: add to cart
@@ -83,7 +79,7 @@ def checkout():
         browser.find_by_css('.iCheck-helper')[1].click()
         browser.find_by_name('commit').click()
         
-if __name__="__main__":
+if __name__=="__main__":
         main()
 
 
