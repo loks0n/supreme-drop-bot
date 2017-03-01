@@ -1,8 +1,12 @@
 <p align="center">
-  <img src="https://github.com/loks0n/Supreme-Drop-Bot/raw/master/bin/logo.gif" alt="logo"/>
+  <img src="https://github.com/loks0n/Supreme-Drop-Bot/raw/master/bin/logo.gif" alt="Logo"/>
 </p>
 
 A supreme bot, written in python, to grab a list of specified products before they sell out!
+
+<p align="center">
+  <img src="https://github.com/loks0n/Supreme-Drop-Bot/raw/master/bin/screenshot.png" alt="Screenshot"/>
+</p>
 
 ## Use/Install
 
