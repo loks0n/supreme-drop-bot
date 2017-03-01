@@ -18,7 +18,7 @@ class Container:
 class Application:
     def __init__(self, master):
         self.builder = builder = pygubu.Builder()
-        builder.add_from_file('gui.ui')
+        builder.add_from_file('bin\\gui.ui')
         self.mainwindow = builder.get_object('mainwindow', master)
         self.console = builder.get_object('console')
         self.productlist = builder.get_object('listbox_products')
@@ -47,7 +47,7 @@ class Application:
         self.console_print("Loading config.json")
         self.config = {}
         try:
-            with open('config.json', 'r') as f:
+            with open('bin\\config.json', 'r') as f:
                 self.config = json.load(f)
             self.container.value_name.set(self.config['name'])
             self.container.value_email.set(self.config['email'])
@@ -84,7 +84,7 @@ class Application:
         self.config['cardexpmonth'] = self.container.value_cardexpmonth.get()
         self.config['cardexpyear'] = self.container.value_cardexpyear.get()
         self.config['cardcode'] = self.container.value_cardcode.get()
-        with open('config.json', 'w') as f:
+        with open('bin\\config.json', 'w') as f:
             json.dump(self.config, f)
         self.console_print("Updated config.json")
 
@@ -154,7 +154,7 @@ def main():
     app = Application(root)
     root.wm_title("Supreme Drop Bot")
     root.wm_resizable(0,0)
-    root.wm_iconbitmap("favicon.ico")
+    root.wm_iconbitmap("bin\\favicon.ico")
     root.mainloop()
 
 if __name__ == '__main__':
