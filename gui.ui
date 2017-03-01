@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="mainwindow">
+    <property name="height">600</property>
+    <property name="width">600</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+    </layout>
+    <child>
+      <object class="ttk.Labelframe" id="console_frame">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Console</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="columnspan">2</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+          <property name="sticky">ne</property>
+        </layout>
+        <child>
+          <object class="tk.Text" id="console">
+            <property name="background">#ffffff</property>
+            <property name="foreground">#004080</property>
+            <property name="height">18</property>
+            <property name="width">30</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button_startbot">
+            <property name="command">start_bot</property>
+            <property name="text" translatable="yes">Start Bot</property>
+            <property name="width">40</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Labelframe" id="paymentdata_frame">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Payment Data</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+          <property name="sticky">sw</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="label_name">
+            <property name="text" translatable="yes">Name:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_name">
+            <property name="textvariable">string:value_name</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_email">
+            <property name="text" translatable="yes">Email:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_email">
+            <property name="textvariable">string:value_email</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_phone">
+            <property name="text" translatable="yes">Phone:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_phone">
+            <property name="textvariable">string:value_phone</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_addr1">
+            <property name="text" translatable="yes">Address 1:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_addr1">
+            <property name="textvariable">string:value_addr1</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_addr2">
+            <property name="text" translatable="yes">Address 2:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_addr2">
+            <property name="textvariable">string:value_addr2</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_addr3">
+            <property name="text" translatable="yes">Address 3:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_addr3">
+            <property name="textvariable">string:value_addr3</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_zip">
+            <property name="text" translatable="yes">Zip/Postcode:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">6</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_zip">
+            <property name="textvariable">string:value_zip</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">6</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_city">
+            <property name="text" translatable="yes">City:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">7</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_city">
+            <property name="textvariable">string:value_city</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">7</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_country">
+            <property name="text" translatable="yes">Country:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">8</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Combobox" id="combobox_country">
+            <property name="textvariable">string:value_country</property>
+            <property name="values">GB DE FR</property>
+            <property name="width">22</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">8</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_cardtype">
+            <property name="text" translatable="yes">Card Type:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">9</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Combobox" id="combobox_cardtype">
+            <property name="textvariable">string:value_cardtype</property>
+            <property name="values">visa mastercard american_express</property>
+            <property name="width">22</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">9</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_cardnumber">
+            <property name="text" translatable="yes">Card Number:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">10</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_cardnumber">
+            <property name="textvariable">string:value_cardnumber</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">10</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_cardexpmonth">
+            <property name="text" translatable="yes">Exp Month:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">11</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Combobox" id="combobox_cardexpmonth">
+            <property name="textvariable">string:value_cardexpmonth</property>
+            <property name="values">01 02 03 04 05 06 07 08 09 10 11 12</property>
+            <property name="width">22</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">11</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_cardexpyear">
+            <property name="text" translatable="yes">Exp Year:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">12</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Combobox" id="combobox_cardexpyear">
+            <property name="textvariable">string:value_cardexpyear</property>
+            <property name="values">2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028</property>
+            <property name="width">22</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">12</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_cardcode">
+            <property name="text" translatable="yes">CVV/CVC Code:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">13</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_cardcode">
+            <property name="textvariable">string:value_cardcode</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">13</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button_paymentupdate">
+            <property name="command">update_paymentdata</property>
+            <property name="text" translatable="yes">Update</property>
+            <property name="width">40</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="propagate">True</property>
+              <property name="row">14</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Labelframe" id="productlist_frame">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Product List</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="columnspan">1</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="rowspan">2</property>
+          <property name="sticky">nw</property>
+        </layout>
+        <child>
+          <object class="tk.Listbox" id="listbox_products">
+            <property name="width">41</property>
+            <bind add="True" handler="select_productdata" sequence="&lt;&lt;ListboxSelect&gt;&gt;" />
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Labelframe" id="productdata_frame">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Product Data</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property name="sticky">nw</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="label_productname">
+            <property name="text" translatable="yes">Name:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_productname">
+            <property name="textvariable">string:productname</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_productcolour">
+            <property name="text" translatable="yes">Colour:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_productcolour">
+            <property name="textvariable">string:productcolour</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_productsize">
+            <property name="text" translatable="yes">Size:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Combobox" id="combobox_productsize">
+            <property name="textvariable">string:productsize</property>
+            <property name="values">Small Medium Large</property>
+            <property name="width">22</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_productcategory">
+            <property name="text" translatable="yes">Category:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Combobox" id="combobox_productcategory">
+            <property name="textvariable">string:productcategory</property>
+            <property name="values">all jackets shirts tops/sweaters sweatshirts pants t-shirts hats bags accessories skate</property>
+            <property name="width">22</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button_productremove">
+            <property name="command">remove_productdata</property>
+            <property name="text" translatable="yes">Remove</property>
+            <property name="width">40</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button_productadd">
+            <property name="command">add_productdata</property>
+            <property name="text" translatable="yes">Add</property>
+            <property name="width">40</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label_logo">
+        <property name="font">{Courier New} 16 {}</property>
+        <property name="foreground">#004080</property>
+        <property name="text" translatable="yes">SUPREME DROP BOT</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
