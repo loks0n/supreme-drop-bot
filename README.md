@@ -24,7 +24,10 @@ A supreme bot, written in python, to grab a list of specified products before th
 2. Wait until Drop function.
 3. Save Product list in json.
 
+<p align="center">
 Made money from this bot? Buy me a coffee!
+<br>
 Bitcoin: 1BUDh1wzcvqqXRaZdPBSy3RFWdfat4SB5E
-
+<br>
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DVT7ZKQLWVGZQ)
+</p>
