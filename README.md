@@ -25,4 +25,6 @@ A supreme bot, written in python, to grab a list of specified products before th
 3. Save Product list in json.
 
 Made money from this bot? Buy me a coffee!
+Bitcoin: 1BUDh1wzcvqqXRaZdPBSy3RFWdfat4SB5E
+
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DVT7ZKQLWVGZQ)
