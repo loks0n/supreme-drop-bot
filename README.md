@@ -1,4 +1,4 @@
-![logo](loks0n.github.com/Supreme-Drop-Bot/bin/logo.gif)
+![logo](https://github.com/loks0n/Supreme-Drop-Bot/raw/master/bin/logo.gif)
 A supreme bot, written in python, to grab a list of specified products before they sell out!
 
 ## Use/Install
