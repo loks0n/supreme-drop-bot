@@ -1,12 +1,16 @@
 # Supreme-Drop-Bot
 A supreme bot, written in python, to grab a list of specified products before they sell out!
 
-## Requirements
-Supreme Drop Bot requires Python 3.X, and the following libraries:
+## Use/Install
+### Windows
+1. Download and unzip latest build.
+2. Run main.exe
+### Linux/Other
+1. Download source.
+1. Install all dependencies with pip.
+2. Run main.py
 
-1. Selenium
-2. Splinter
-3. BeautifulSoup4
-4. Requests
-
-__[ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) must be in the System PATH.__
+## Todo
+1. Shrink cx_freeze compile size, by selecting/ using less packages.
+2. Wait until Drop function.
+3. Save Product list in json.
