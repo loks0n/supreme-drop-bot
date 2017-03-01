@@ -8,7 +8,7 @@ os.environ['TCL_LIBRARY']="C:\\Program Files (x86)\Python36-32\\tcl\\tcl8.6"
 os.environ['TK_LIBRARY']="C:\\Program Files (x86)\\Python36-32\\tcl\\tk8.6"
 build_exe_options = {
 	"packages": ["multiprocessing","time", "sys", "requests", "hashlib", "os","json", "requests", "bs4", "splinter","selenium", "pygubu"],
-	"include_files": ["bin","chromedriver.exe", "README.md"]
+	"include_files": ["bin", "tcl86t.dll","tk86t.dll","chromedriver.exe", "README.md"]
 }
 base = None
 if sys.platform == "win32":
