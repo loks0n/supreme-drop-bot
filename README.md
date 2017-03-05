@@ -18,8 +18,9 @@ Chrome must be installed.
 
 ### Linux/Other
 1. Download source.
-1. Install all dependencies with pip.
-2. Run main.py
+2. Install all dependencies with pip.
+3. Install chromedriver, and ensure it is added to the system path.
+4. Run main.py
 
 ## Todo
 1. Shrink cx_freeze compile size, by selecting/ using less packages.
