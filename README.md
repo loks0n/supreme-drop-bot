@@ -10,8 +10,10 @@ A supreme bot, written in python, to grab a list of specified products before th
 
 ## Use/Install
 
+Chrome must be installed.
+
 ### Windows
-1. Download and unzip latest build.
+1. Download and unzip [latest release](https://github.com/loks0n/Supreme-Drop-Bot/releases).
 2. Run main.exe
 
 ### Linux/Other
@@ -23,6 +25,7 @@ A supreme bot, written in python, to grab a list of specified products before th
 1. Shrink cx_freeze compile size, by selecting/ using less packages.
 2. Wait until Drop function.
 3. Save Product list in json.
+4. Allow user to choose which browser/driver to use in selenium.
 
 <p align="center">
 Made money from this bot? Buy me a coffee!
