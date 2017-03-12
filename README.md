@@ -27,6 +27,9 @@ Chrome must be installed.
 2. Wait until Drop function.
 3. Save Product list in json.
 4. Allow user to choose which browser/driver to use in selenium.
+5. Optimize/cleanup search function.
+6. Add proxy support.
+7. Add all countrys, and add full international support.
 
 <p align="center">
 Made money from this bot? Buy me a coffee!
