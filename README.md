@@ -8,15 +8,17 @@ A supreme bot, written in python, to grab a list of specified products before th
   <img src="https://github.com/loks0n/Supreme-Drop-Bot/raw/master/bin/screenshot.png" alt="Screenshot"/>
 </p>
 
-## Use/Install
+## Dependencies
+Selenium, BeautifulSoup4, pygubu, Requests, Splinter
 
+## Use/Install
 Chrome must be installed.
 
-### Windows
+#### Windows
 1. Download and unzip [latest release](https://github.com/loks0n/Supreme-Drop-Bot/releases).
 2. Run main.exe
 
-### Linux/Other
+#### Linux/Other
 1. Download source.
 2. Install all dependencies with pip.
 3. Install chromedriver, and ensure it is added to the system path.
@@ -30,6 +32,7 @@ Chrome must be installed.
 5. Optimize/cleanup search function.
 6. Add proxy support.
 7. Add all countrys, and add full international support.
+8. Find form objects by xpath, rather than id.
 
 <p align="center">
 Made money from this bot? Buy me a coffee!
