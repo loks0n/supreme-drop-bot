@@ -1,3 +1,5 @@
+# SINCE [SUPREMENEWYORK.COM ADDED CAPTCHA](https://hypebeast.com/2017/3/supreme-captcha-online-bots), THIS BOT NO LONGER FUNCTIONS, AND IS NOT IN DEVELOPMENT
+
 <p align="center">
   <img src="https://github.com/loks0n/Supreme-Drop-Bot/raw/master/bin/logo.gif" alt="Logo"/>
     <br>
