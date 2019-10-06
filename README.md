@@ -33,13 +33,3 @@ Chrome must be installed.
 6. Add proxy support.
 7. Add all countrys, and add full international support.
 8. Find form objects by xpath, rather than id.
-
-<p align="center">
-Made money from this bot? Buy me a coffee!
-<br>
-Bitcoin: 1BUDh1wzcvqqXRaZdPBSy3RFWdfat4SB5E
-<br>
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DVT7ZKQLWVGZQ">
-<img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" ahrefalt="Logo"/>
-</a>
-</p>
